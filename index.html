@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guessing-game</title>
+    <link rel="stylesheet" href="styles/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to this Guessing-game!</h1>
+      <h2>Will you be able to guess the right number???</h2>
+      <form>
+        <div>
+          <label for="number">Try your luck (1 => 20):</label>
+          <input
+            type="number"
+            id="number"
+            name="number"
+            min="1"
+            max="20"
+            placeholder="Enter your guess here"
+            step="1"
+            list="defaultNumbers"
+          />
+          <datalist id="defaultNumbers">
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+            <option value="4"></option>
+            <option value="5"></option>
+            <option value="6"></option>
+            <option value="7"></option>
+            <option value="8"></option>
+            <option value="9"></option>
+            <option value="10"></option>
+            <option value="11"></option>
+            <option value="12"></option>
+            <option value="13"></option>
+            <option value="14"></option>
+            <option value="15"></option>
+            <option value="16"></option>
+            <option value="17"></option>
+            <option value="18"></option>
+            <option value="19"></option>
+            <option value="20"></option>
+          </datalist>
+        </div>
+        <div>
+          <input
+            id="submit"
+            type="submit"
+            text="Click here to see if you guessed it right !"
+          />
+        </div>
+      </form>
+    </header>
+    <script src="script/script.js"></script>
+  </body>
+</html>
